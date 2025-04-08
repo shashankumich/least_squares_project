@@ -1,3 +1,0 @@
-/Users/shashank/University of Michigan Dropbox/Shashank Verma/UMich/CPlusPlusCodingPractice/least_square_project/build/CMakeFiles/least_squares.dir
-/Users/shashank/University of Michigan Dropbox/Shashank Verma/UMich/CPlusPlusCodingPractice/least_square_project/build/CMakeFiles/edit_cache.dir
-/Users/shashank/University of Michigan Dropbox/Shashank Verma/UMich/CPlusPlusCodingPractice/least_square_project/build/CMakeFiles/rebuild_cache.dir
