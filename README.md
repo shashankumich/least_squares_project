@@ -17,7 +17,8 @@ git clone --recurse-submodules https://github.com/shashankumich/least_squares_pr
 cd least_squares_project
 
 # Build
-mkdir build && cd build
+mkdir build
+cd build
 cmake ..
 make
 
