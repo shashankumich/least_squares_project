@@ -9,14 +9,10 @@ A C++ implementation of a 2D position estimator using nonlinear least squares, b
 - C++17
 - CMake 3.10+
 
-## Project Structure
-include/         # Estimator function declarations
-src/             # Source files including main
-external/eigen/  # Eigen as a git submodule
-
 ## 🛠️ Build Instructions
 
 ```bash
+############################################
 # Clone the repo including Eigen
 git clone --recurse-submodules https://github.com/shashankumich/least_squares_project.git
 cd least_squares_project
@@ -29,4 +25,10 @@ make
 
 # Run
 ./least_squares
+
+###########################################
+# Project Structure
+include/         # Estimator function declarations
+src/             # Source files including main
+external/eigen/  # Eigen as a git submodule
 
