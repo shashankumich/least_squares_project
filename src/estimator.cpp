@@ -7,6 +7,7 @@ Eigen::Vector2d leastSquareEstimator(const std::vector<Eigen::Vector2d> &anchors
 
     if (numAnchors < 3){
         std::cout << "Not enough anchors to estimate the accurate location" << std::endl;
+        return Eigen::Vector2d::Zero();
     }
 
     Eigen::Vector2d firstAnchor = anchors[0];
