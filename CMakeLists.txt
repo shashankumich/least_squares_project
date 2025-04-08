@@ -1,22 +1,30 @@
 cmake_minimum_required(VERSION 3.10)
-project(LeastSquaresEstimator)
+project(LeastSquaresEstimator)  #Could add versions here
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Add Eigen from the submodule
+################################################################################
+# DEPENDENCIES: Add Eigen from the submodule 
+################################################################################
 include_directories(${CMAKE_SOURCE_DIR}/external/eigen)
 
-# Add your own headers
+################################################################################
+# HEADERS: Add your own headers
+################################################################################
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
-# Define the executable
+################################################################################
+# Executable
+################################################################################
 add_executable(least_squares
     src/main.cpp
     src/estimator.cpp
 )
 
-# ---------------- GTest Section ----------------
+################################################################################
+# GTest
+################################################################################
 include(FetchContent)
 
 cmake_policy(SET CMP0135 NEW)
