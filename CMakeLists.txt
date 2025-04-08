@@ -1,14 +1,16 @@
 cmake_minimum_required(VERSION 3.10)
-project(LeastSquareEstimator)
+project(LeastSquaresEstimator)
 
-set(CMAKE_CXX_STANDARD 17)  #Set C++ version
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Manually add the Eigen path
-include_directories(${CMAKE_SOURCE_DIR}/include)
-include_directories($ENV{HOME}/toolbox/eigen-3.4.0)
+# Add Eigen from the submodule
+include_directories(${CMAKE_SOURCE_DIR}/external/eigen)
 
-# Source files
+# Add your own headers
+include_directories(${CMAKE_SOURCE_DIR}/include)
+
+# Define the executable
 add_executable(least_squares
     src/main.cpp
     src/estimator.cpp
