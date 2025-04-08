@@ -9,6 +9,11 @@ A C++ implementation of a 2D position estimator using nonlinear least squares, b
 - C++17
 - CMake 3.10+
 
+## Project Structure
+include/         # Estimator function declarations
+src/             # Source files including main
+external/eigen/  # Eigen as a git submodule
+
 ## 🛠️ Build Instructions
 
 ```bash
@@ -24,9 +29,4 @@ make
 
 # Run
 ./least_squares
-
-# Project Structure
-include/         # Estimator function declarations
-src/             # Source files including main
-external/eigen/  # Eigen as a git submodule
 
