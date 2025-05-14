@@ -1,4 +1,4 @@
-# TODO: Learn to convert this into a library. 
+# TODO: Convert this into a library (learning task) 
 
 # C++ Practice
 # 🔍 Least Squares Estimator
